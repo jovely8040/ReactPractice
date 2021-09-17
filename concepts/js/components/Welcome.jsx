@@ -17,9 +17,41 @@ class Welcome extends React.Component {
         console.log("Welcome 생성자 호출!");
     }
 
+    //  LifeCycle
+    //  Mount 단계: rendering 직전
+    componentWillMount() {
+        console.log("LifeCycle: componentWillMount Calls");
+    }
+
+    //  Mount 단계: rendering 직후
+    componentDidMount() {
+        console.log("LifeCycle: componentDidMount Calls");
+    }
+
+    componentWillUnmount() {
+        console.log("LifeCycle: componentWillUnmoutn Calls");
+    }
+    //  Mount 단계: componentWillMount -> render -> componentDidMount
+    //  Unmount 단계: componentWillUnmount
+
+    //  Old Updating 라이프 사이클:
+    //  componentWillRecieveProps -> componentWillUpdate -> componentDidUpdate
+    componentWillReceiveProps() {
+        console.log("LifeCycle: componentWillReceiveProps call");
+    }
+
+    componentWillUpdate() {
+        console.log("LifeCycle: componentWillUpdate call");
+    }
+
+    componentDidUpdate() {
+        console.log("LifeCycle: componentDidUpdate call");
+    }
+
     render() {
         //  JSX를 리턴
         console.log("render props:", this.props)
+        console.log("LifeCycle: render");
 
         //  컴포넌트에 style 부여
         //  style 속성에 객체 전달

@@ -14,7 +14,7 @@ class PropClass extends Component {
         const { prop_func } = this.props;
         console.log(prop_func);
         if (typeof prop_func === "function") {
-            prop_func("Message From PropClass");
+            prop_func("Message From PropClass Component");
         }
     }
     render() {

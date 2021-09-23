@@ -2,7 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 // import App from './App';
-import App from './App.props'; // 루트 컴포넌트 렌더링
+// import App from './App.props'; // 루트 컴포넌트 렌더링. Props 테스트
+import App from './App.state';    //  State 테스트
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(

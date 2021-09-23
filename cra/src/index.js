@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+// import App from './App';
+import App from './App.props'; // 루트 컴포넌트 렌더링
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
